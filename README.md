@@ -1,37 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Talltalk - Language Learning Platform
+
+Talltalk is a language learning platform that aims to provide an immersive and engaging experience for users to learn languages. It utilizes modern technologies such as Next.js 14, TypeScript, TailwindCSS, and Server Actions to deliver a seamless learning experience.
+
+## Features
+
+- **AI Voices**: Utilizes ElevenLabs for AI voices to enhance the learning experience.
+- **Sound Effects**: Includes sound effects to make the learning process more interactive.
+- **Hearts System**: Implements a hearts system to track progress and motivate users.
+- **Points / XP System**: Includes a points/XP system to reward users for their progress.
+- **No Hearts Left Popup**: Alerts users when they have no hearts left, encouraging them to continue learning.
+- **Exit Confirmation Popup**: Provides a confirmation popup when users try to exit the platform.
+- **Practice Old Lessons**: Allows users to practice old lessons to regain hearts.
+- **Leaderboard**: Includes a leaderboard to showcase top users based on points/XP.
+- **Quests Milestones**: Sets milestones and quests for users to achieve.
+- **Shop System**: Includes a shop system where users can exchange points for hearts.
+- **Pro Tier**: Offers a Pro tier with unlimited hearts using Stripe subscription.
+- **Landing Page**: Features a landing page to introduce users to the platform.
+- **Admin Dashboard**: Provides an admin dashboard to manage the platform.
+- **Drizzle ORM**: Uses Drizzle ORM for database management.
+- **NeonDB Postgres Database**: Utilizes NeonDB with a Postgres database for data storage.
 
 ## Getting Started
 
-First, run the development server:
+To get started with Talltalk, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository: `git clone https://github.com/yourusername/talltalk.git`
+2. Install dependencies: `npm install`
+3. Run the development server: `npm run dev`
+4. Open your browser and navigate to `http://localhost:3000`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Contributing
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+We welcome contributions to Talltalk! If you'd like to contribute, please follow these steps:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Fork the repository
+2. Create a new branch: `git checkout -b feature/your-feature-name`
+3. Make your changes and commit them: `git commit -am 'Add new feature'`
+4. Push to the branch: `git push origin feature/your-feature-name`
+5. Submit a pull request
 
-## Learn More
+## License
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# TallTalk
+Talltalk is licensed under the MIT License. See `LICENSE` for more information.
