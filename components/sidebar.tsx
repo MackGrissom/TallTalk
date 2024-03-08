@@ -2,6 +2,16 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { SidebarItem } from "./sidebar-item";
 import Link from "next/link";
+import {
+  ClerkLoaded,
+  ClerkLoading,
+  RedirectToUserProfile,
+  SignIn,
+  SignOutButton,
+  UserButton,
+} from "@clerk/nextjs";
+import { BookHeartIcon, Loader } from "lucide-react";
+import { Button } from "./ui/button";
 
 type Props = {
   className?: string;
@@ -34,6 +44,20 @@ export const Sidebar = ({ className }: Props) => {
         <SidebarItem label="Quests" href="/quests" iconSrc="/quest.svg" />
         <SidebarItem label="Shop" href="/shop" iconSrc="/shop.svg" />
         <SidebarItem label="Sponsor" href="/sponsor" iconSrc="/sponsor.svg" />
+      </div>
+      <div className="p-4">
+        <ClerkLoading>
+          <Loader className="h-5 w-5 animate-spin text-muted-foreground" />
+        </ClerkLoading>
+        <ClerkLoaded>
+          <UserButton afterSignOutUrl="/" />
+          <Link href='/settings'>
+          <Button variant='secondary' className="w-full mb-2 mt-2"> My Account </Button>
+          </Link>
+          <Button variant='sidebarOutline' className="w-full">
+          <SignOutButton/>
+          </Button>
+        </ClerkLoaded>
       </div>
     </div>
   );
