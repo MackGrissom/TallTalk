@@ -19,7 +19,7 @@ export const Header = () => {
           <Image src="/logo.svg" alt="logo" height={40} width={40} />
           <h1 className="text-2xl font-extrabold text-violet-600 tracking-wide">
             {" "}
-            TallTalk
+            ProTalk
           </h1>
         </div>
         <nav className="w-full flex justify-center align-middle">
