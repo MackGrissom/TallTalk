@@ -50,7 +50,23 @@ export const Sidebar = ({ className }: Props) => {
           <Loader className="h-5 w-5 animate-spin text-muted-foreground" />
         </ClerkLoading>
         <ClerkLoaded>
-          <UserButton afterSignOutUrl="/" />
+          <div className="flex justify-center align-middle w-[100%]">
+          <Button variant='secondary' className="w-full mb-2 mt-2"> 
+          
+          <UserButton afterSignOutUrl="/"
+          showName
+          userProfileMode='modal'
+          appearance={{
+            elements: {
+              userButtonBox: {
+                flexDirection: "row-reverse",
+                colorText:"white",
+              },
+            },
+          }}
+          />
+          </Button>
+          </div>
           <Link href='/settings'>
           <Button variant='secondary' className="w-full mb-2 mt-2"> My Account </Button>
           </Link>
