@@ -26,7 +26,7 @@ export const Header = () => {
             <ul className="flex gap-6 p-2">
             <Button variant='default' className="text-muted-foreground gap-1">
               <LibraryBigIcon/>
-              <Link href='/faq'>Learn</Link>
+              <Link href='/learn'>Learn</Link>
               </Button>
               <Button variant='default' className="text-muted-foreground gap-1">
                 <UsersIcon/>
@@ -40,7 +40,7 @@ export const Header = () => {
               
               <Button variant='default' className="text-muted-foreground gap-1">
                 <GraduationCapIcon/>
-              <Link href='/faq'>Sponsorship Program</Link>
+              <Link href='/sponsor'>Sponsorship Program</Link>
               </Button>
             </ul>
           </nav>

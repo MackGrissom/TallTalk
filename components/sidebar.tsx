@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
+'use client'
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { SidebarItem } from "./sidebar-item";
@@ -51,27 +53,18 @@ export const Sidebar = ({ className }: Props) => {
         </ClerkLoading>
         <ClerkLoaded>
           <div className="flex justify-center align-middle w-[100%]">
-          <Button variant='secondary' className="w-full mb-2 mt-2"> 
-          
-          <UserButton afterSignOutUrl="/"
-          showName
-          userProfileMode='modal'
-          appearance={{
-            elements: {
-              userButtonBox: {
-                flexDirection: "row-reverse",
-                colorText:"white",
-              },
-            },
-          }}
-          />
-          </Button>
+  
+            <Button
+              variant="primary"
+              className="w-full mb-2 mt-2"
+              //@ts-ignore
+              onClick={() => window.Clerk.openUserProfile()}
+            >
+              My Account
+            </Button>
           </div>
-          <Link href='/settings'>
-          <Button variant='secondary' className="w-full mb-2 mt-2"> My Account </Button>
-          </Link>
-          <Button variant='sidebarOutline' className="w-full">
-          <SignOutButton/>
+          <Button variant="secondary" className="w-full">
+            <SignOutButton />
           </Button>
         </ClerkLoaded>
       </div>

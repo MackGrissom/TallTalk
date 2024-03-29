@@ -75,7 +75,7 @@ dependencies:
     specifier: ^1.6.0
     version: 1.6.0(react@18.2.0)
   sonner:
-    specifier: ^1.4.3
+    specifier: ^1.4.41
     version: 1.4.41(react-dom@18.2.0)(react@18.2.0)
   stripe:
     specifier: ^14.20.0
