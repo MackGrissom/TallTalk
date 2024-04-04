@@ -3,7 +3,6 @@ import { drizzle } from "drizzle-orm/neon-http";
 import { neon } from "@neondatabase/serverless";
 
 import * as schema from "../db/schema";
-import { Dna } from "lucide-react";
 
 const sql = neon(process.env.DATABASE_URL!);
 const db = drizzle(sql, { schema });
@@ -20,12 +19,12 @@ const main = async () => {
 
     await db.insert(schema.courses).values([
       {
-        id: 1,
+        id: 2,
         title: "English",
         imageSrc: "/us.svg",
       },
       {
-        id: 2,
+        id: 1,
         title: "Spanish",
         imageSrc: "/es.svg",
       },
